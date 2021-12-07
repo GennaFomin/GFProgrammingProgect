@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Gennady Fomin. Programming project. · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Small brief</h4>
+          <p class="text-muted">This page presents some of my analysis made on "TMDB 5000 Movie Dataset" from kaggle.com</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="link2yDisk" class="text-white">Download jupiter notebook and more</a></li>
+            <li><a href="link2github" class="text-white">Go To GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <strong>Results</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Some plots on given data</h1>
+        <p class="lead text-muted">Simple analysis was made, there are plots of 3 different numeric data from Data Set, their mean, median and standart deviation. Moreover, there are some more complicated plots of different dependencies. </p>
+        <p>
+          <a href="/pipeline" class="btn btn-primary my-2">Brief conclusion</a>
+          <a href="/link2yDisk" class="btn btn-secondary my-2">Download jupnb and data</a>
+          <a href="/datasetredir" class="btn btn-secondary my-2">Learn DataSet</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="{{url_for('static', filename='img/plt1.png')}}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+            <div class="card-body">
+              <p class="card-text">Movies, there avergae raiting and budget.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/plot1" class="btn btn-sm btn-outline-secondary">Open</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="{{url_for('static', filename='img/plt2.png')}}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+
+            <div class="card-body">
+              <p class="card-text">How average movie raiting correlates to genre?</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/plot2" class="btn btn-sm btn-outline-secondary">Open</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="{{url_for('static', filename='img/plt3.png')}}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+
+            <div class="card-body">
+              <p class="card-text">How does the main actor change the movie revenue?</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/plot3" class="btn btn-sm btn-outline-secondary">Open</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="{{url_for('static', filename='img/plt4.png')}}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+
+            <div class="card-body">
+              <p class="card-text">Average movie raiting of directors with 7+ films.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/plot4" class="btn btn-sm btn-outline-secondary">Open</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="{{url_for('static', filename='img/plt5.png')}}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+
+            <div class="card-body">
+              <p class="card-text">Any correlation between film raiting and its revenue?</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/plot5" class="btn btn-sm btn-outline-secondary">Open</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="{{url_for('static', filename='img/plt6.png')}}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+
+            <div class="card-body">
+              <p class="card-text">Any correlation between film budget and cast popularity?</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/plot6" class="btn btn-sm btn-outline-secondary">Open</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="{{url_for('static', filename='img/plt7.png')}}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+
+            <div class="card-body">
+              <p class="card-text">Movie budgets ploted. You can scroll down to some data after openning.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/plot7" class="btn btn-sm btn-outline-secondary">Open</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="{{url_for('static', filename='img/plt8.png')}}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+
+            <div class="card-body">
+              <p class="card-text">Average raiting distribution. You can scroll down to some data after openning.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/plot8" class="btn btn-sm btn-outline-secondary">Open</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="{{url_for('static', filename='img/plt9.png')}}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+
+            <div class="card-body">
+              <p class="card-text">Movies popularity from movies raiting. You can scroll down to some data after openning.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/plot9" class="btn btn-sm btn-outline-secondary">Open</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Project on programming made by Fomin Gennady. BPAD212-1.</p>
+  </div>
+</footer>
+
+
+    <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+
+      
+  </body>
+</html>
